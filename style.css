@@ -1,0 +1,276 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+--color-discount: hsl(26, 100%, 55%);
+--color2: hsl(25, 100%, 94%);
+--color3: hsl(220, 13%, 13%);
+--color-Letras-Nav: hsl(219, 9%, 45%);
+--color-letras-parrafo: hsl(225, 2%, 54%);
+--color6: hsl(223, 64%, 98%);
+--color-Fondo: hsl(0, 0%, 100%);
+--color8: hsl(0, 0%, 0%);
+}
+
+body{
+   background-color: var(--color-Fondo);
+
+}
+
+.icon-menu{
+    display: none;
+}
+
+.header{
+    display: flex;
+
+}
+
+.logo{
+    margin-right: 3vh;
+}
+
+.nav{
+    margin: auto;
+    padding: 2vh;
+    display: flex;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-left: 5vh;
+    color: var(--color-Letras-Nav);
+    font-family: 'Piazzolla', serif;
+    font-weight: 700;
+    
+}
+
+
+.profile{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-left: 15vh ;
+}
+
+
+.cart{
+    margin-right: 3vh;
+    width: 18%;
+    height: 18%;
+}
+
+.avatar{
+    width: 30%;
+    height: 30%;
+}
+
+.main{
+    display: flex;
+    margin-top: 7vh;
+}
+
+.main_container{
+    display: flex;
+    margin: auto;
+    width:  110vh;
+    height: auto;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vh;
+}
+
+.product1_big{
+    width: 500px;
+    border-radius: 15px;
+}
+
+.pictures_products_small{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+
+}
+
+.pictures_products_small img{
+    width: 19.5%;
+    border-radius: 8px;
+}
+.conatiner_two_main{
+    margin-left: 10vh;
+}
+ 
+.description h1{
+    color: rgb(242, 143, 15);
+    margin-top: 8vh ;
+    font-size: 22px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.description h2{
+    margin-top: 3vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+}
+.description p{
+    margin-top: 3vh;
+    font-family: 'Piazzolla', serif;
+    font-weight: bold;
+    color: var(--color-letras-parrafo);
+    width: 100%;
+    font-size: 18px;
+}
+
+.price{
+    margin-top: 3vh;
+}
+
+.price .price_product{
+    font-family: 'Lato', sans-serif;
+}
+.price .discount{
+    margin-left: 1.5vh;
+    padding: 0.2vh;
+    border-radius: 8px;
+    background-color: var(--color2);
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: var(--color-discount)
+}
+
+.previous_price{
+    margin-top: 1vh;
+    color: var(--color-letras-parrafo);
+    font-family: 'Outfit', sans-serif;
+    text-decoration: line-through;
+}
+
+.article{
+    margin-top: 5vh;
+    display: flex;
+    width: 100%;
+}
+
+.article .minus-plus{
+    padding: 1vh;
+    width: 90%;
+    background-color: var(--color6);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.add_buttom{
+    margin-left: 3vh;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--color-discount);
+    font-family: 'Lato', sans-serif;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width : 1050px) {
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    .product1_big{
+        width: 330px;
+        margin-top: 50px;
+    }
+    .conatiner_two_main{
+        margin-left: 5vh;
+    }
+
+    .add_buttom{
+        margin-right: 5vh;
+    }
+     .profile{
+         padding: 0;
+         margin-left: 3vh;
+     }
+    
+}
+
+@media screen and (max-width : 860px) {
+     .logo{
+        margin-left: 3vh;
+     }
+      .nav ul li{
+          display: none;
+      }
+      .pictures_products_small{
+          display: none;
+      }
+      .products{
+          margin: 0;
+      }
+      .icon-menu{
+          display: block;
+      }
+      .main_container{
+          display: grid;
+      }
+      .product1_big{
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          margin-right: 3;
+      }
+      .price{
+          width: 90%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+      }
+      .discount_pirce_product{
+          display: flex;
+      }
+
+      .article{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+  
+          width: 100%;
+        
+      }
+
+      .minus-plus{
+        margin-bottom: 2vh;
+        margin-left: 0;
+        width: 5;
+        border: 1px solid black;
+        
+          
+      }
+
+      .add_buttom{
+          width: 90%;
+          height: 50px;
+          border-radius: 8px;
+          box-shadow: 0px 5px 10px 0px rgb(255, 146, 44);
+          margin-left: 0;
+          margin-bottom: 3vh ;
+      }
+
+
+}
